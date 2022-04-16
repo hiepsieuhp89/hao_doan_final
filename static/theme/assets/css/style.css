@@ -5289,3 +5289,14 @@ span.notify-right{
   color: #fff;
   opacity: 0.8;
 }
+.product-desc{
+  line-height: 24px;
+}
+.product-desc h1{
+	font-size: 30px;
+}
+.product-desc h3{
+	color: #000000db;
+    margin-top: 20px;
+    font-weight: 600;
+}

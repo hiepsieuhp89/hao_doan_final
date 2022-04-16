@@ -276,7 +276,7 @@ class ProductTable extends AbstractTableGateway {
         $sqlEx = $this->sql->select();
         $sqlEx->from($this->table);
         $sqlEx->join("tbl_img", "tbl_img.id_product = tbl_products.id", array("thumbnail" => "thumbnail"));
-        $sqlEx->order('id DESC');
+        $sqlEx->order('price DESC');
         $sqlEx->limit(8);
         $sqlEx->where(array(
             'cat_id' => $id_cat,

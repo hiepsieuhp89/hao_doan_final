@@ -511,7 +511,7 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
                 ";
         $this->sendmail($email_customer, $mail_system, 'Yều cầu đặt hàng tại Giadung88.com. Mã hóa đơn: ' . $code_oder, $content_mail1);
 
-//xóa giỏ hàng khi thanh toán xong
+// //xóa giỏ hàng khi thanh toán xong
         unset($arraycart);
         $container->cart = $arraycart;
         echo '1';

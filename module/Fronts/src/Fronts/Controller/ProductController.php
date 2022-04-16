@@ -70,7 +70,7 @@ class ProductController extends AbstractActionController {
         $select = new Select();
         $page = $this->params()->fromRoute('page') ? (int) $this->params()->fromRoute('page') : 1;
         $data_product = $this->getProductTable()->show_product();
-
+            
         $itemsPerPage = 20;
         $data_product->current();
         $paginator = new Paginator(new paginatorIterator($data_product));
@@ -401,12 +401,12 @@ class ProductController extends AbstractActionController {
                 if ($value['sales'] == 1) {
                      $price_sales = ($value['price'] - $value['price_sales'])*100/$value['price'];
                     $sales_off = '<div class="price-percent-reduction2">-' . round($price_sales) . '% OFF</div>';                   
-                    $price = '<span class="price product-price">' . number_format($value['price_sales'], 0, ',', '.') . 'đ / ' . $value['product_dv'] . '</span>
-                      <span class="price old-price">' . number_format($value['price'], 0, ',', '.') . 'đ / ' . $value['product_dv'] . '</span>';
+                    $price = '<span class="price product-price">' . number_format($value['price_sales'], 0, ',', '.') . 'đ' . '</span>
+                      <span class="price old-price">' . number_format($value['price'], 0, ',', '.') . 'đ' . '</span>';
                 } else {
                     $sales_off = '';
                     $price_sales = $value['price'];
-                    $price = '<span class="price product-price">' . number_format($value['price'], 0, ',', '.') . 'đ / ' . $value['product_dv'] . '</span>';
+                    $price = '<span class="price product-price">' . number_format($value['price'], 0, ',', '.') . 'đ'. '</span>';
                 }
                 echo '<li class = "col-xs-6 col-sm-3">
             <div class = "product-container">

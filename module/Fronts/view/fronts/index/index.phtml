@@ -123,10 +123,10 @@
                                                             if ($value_p['sales'] == 1) {
                                                                 //$price_sales = $value_p['price'] - ($value_p['price'] * $value_p['price_sales'] / 100);
                                                                 ?>
-                                                                <span class="price product-price"><?php echo number_format($value_p['price_sales'], 0, ',', '.') . 'đ / ' . $value_p['product_dv']; ?></span>
-                                                                <span class="price old-price"><?php echo number_format($value_p['price'], 0, ',', '.') . 'đ / ' . $value_p['product_dv']; ?></span>
+                                                                <span class="price product-price"><?php echo number_format($value_p['price_sales'], 0, ',', '.') . 'đ'; ?></span>
+                                                                <span class="price old-price"><?php echo number_format($value_p['price'], 0, ',', '.') . 'đ'; ?></span>
                                                             <?php } else { ?>
-                                                                <span class="price product-price"><?php echo number_format($value_p['price'], 0, ',', '.') . 'đ / ' . $value_p['product_dv']; ?></span>
+                                                                <span class="price product-price"><?php echo number_format($value_p['price'], 0, ',', '.') . 'đ'; ?></span>
                                                             <?php } ?>
                                                         </div>
                                                     </div>

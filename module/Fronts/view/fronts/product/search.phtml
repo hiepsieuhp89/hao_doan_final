@@ -29,10 +29,10 @@
                             if ($value->sales == 1) {
                                 //$price_sales = $value->price - ($value->price * $value->price_sales / 100);
                                 ?>
-                                <span class="price product-price"><?php echo number_format($value->price_sales , 0, ',', '.') . 'đ / ' . $value->product_dv; ?></span><br/>
-                                <span class="price old-price"><?php echo number_format($value->price, 0, ',', '.') . 'đ / ' . $value->product_dv; ?></span>
+                                <span class="price product-price"><?php echo number_format($value->price_sales , 0, ',', '.') . 'đ ' ; ?></span><br/>
+                                <span class="price old-price"><?php echo number_format($value->price, 0, ',', '.') . 'đ ' ; ?></span>
                             <?php } else { ?>
-                                <span class="price product-price"><?php echo number_format($value->price, 0, ',', '.') . 'đ / ' . $value->product_dv; ?></span>
+                                <span class="price product-price"><?php echo number_format($value->price, 0, ',', '.') . 'đ ' ; ?></span>
                             <?php } ?>
                         </div>
 
