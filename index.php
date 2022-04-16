@@ -2,7 +2,7 @@
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 dirname(__DIR__);
 //inforurl
-$host = '';
+$host = ':9898';
 define('WEB_MEDIA',  str_replace("\\","/",__DIR__));
 define('WEB_PATH', 'http://'.$_SERVER['SERVER_NAME'].$host);
 define('WEB_STATIC', 'http://'.$_SERVER['SERVER_NAME'].$host.'/static');
