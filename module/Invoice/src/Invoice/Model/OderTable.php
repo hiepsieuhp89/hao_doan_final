@@ -70,6 +70,20 @@ class OderTable extends AbstractTableGateway {
             return FALSE;
         }       
     }
+    public function update_type($id, Oder $obj){
+        $data=$obj->type();
+        $sqlEx=  $this->sql->update();
+        $sqlEx->table($this->table);
+        $sqlEx->set($data);
+        $sqlEx->where(array('id'=>$id));
+         $pst = $this->sql->prepareStatementForSqlObject($sqlEx);
+        $result = $pst->execute();
+        if ($result != null) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }       
+    }
     public function delete_oder($id){
         $sqlEx=  $this->sql->delete();
         $sqlEx->from($this->table);

@@ -374,6 +374,7 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
         $phone = addslashes(trim($this->params()->fromPost('phone')));
         $address = addslashes(trim($this->params()->fromPost('address')));
         $content = addslashes(trim($this->params()->fromPost('content')));
+        $type = addslashes(trim($this->params()->fromPost('type')));
         $get_codeoder = $this->getOrderTable()->get_code_oder();
         $code_oder = $get_codeoder['code_oder'] +=1;
 
@@ -412,6 +413,7 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
             'address' => $address,
             'total_money' => $total_money,
             'content' => $content,
+            'type' => $type,
         );
         $obj = new Oder();
         $obj->exchangeArray($data);

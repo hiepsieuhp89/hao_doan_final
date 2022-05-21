@@ -16,8 +16,6 @@ class Oder {
     public $type; 
     public $content; 
     public $date;
-    
-   
  
     function exchangeArray($data) 
     {
@@ -48,6 +46,7 @@ class Oder {
         $data['total_money'] = $this->total_money; 
         $data['content'] = $this->content; 
         $data['date'] = $date;  
+        $data['type'] = $this->type;  
         return $data;
     }
     public function status(){
@@ -55,4 +54,9 @@ class Oder {
        $data['status_order'] = $this->status_order;
        return $data;
     }
+    public function type(){
+        $data = array();  
+        $data['type'] = $this->type;
+        return $data;
+     }
 }

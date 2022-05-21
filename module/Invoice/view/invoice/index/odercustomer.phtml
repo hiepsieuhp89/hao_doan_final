@@ -80,13 +80,13 @@
                                         </div>
                                                 </td>
                                                 <td>
-                                                    <?php 
-                                                     if ($value->type == 1) {
-                                                    echo 'Thanh toán tại cửa hàng';
-                    }                                   else {
-                                                     echo 'Thanh toán khi nhận được hàng';
-                    }
-                                                    ?>
+                                                <div class='col-sm-11 controls select-pro'>
+                                            <select class='form-control' data-rule-required="true" id="type-oder" onchange="changetype_oder(<?php echo $value['id']?>)" name='manufa_id'>
+                                                <option <?php if($value['type']=='1'){ echo 'selected' ;}?> value="1">Thanh toán tại cửa hàng</option>
+                                                <option <?php if($value['type']=='2'){ echo 'selected' ;}?> value="2"> Thanh toán online</option>
+                                                <option <?php if($value['type']=='3'){ echo 'selected' ;}?> value="3">  Đã thanh toán</option>
+                                            </select>
+                                        </div>
                                                 </td>
                                                 <td><?php echo date('d-m-Y', strtotime($value->date)); ?></td>
                                                 <td>

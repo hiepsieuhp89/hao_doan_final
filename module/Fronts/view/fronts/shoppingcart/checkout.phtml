@@ -63,7 +63,56 @@ $phone_user = $session_user->phone;
                     <textarea class="form-control input" id="contents" name="content" style="width:100%; border: 1px solid #ccc;" rows="5"></textarea>
                 </div><!--/ [col] -->               
             </li><!--/ .row -->
-           
+           <li class="row">
+               <div class="col-sm-12">
+                    <label for=""> Phương thức thanh toán: </label>
+                    <input type="text" name="type" id="type" value="1" hidden>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home" onclick="choosetype_1()">Thanh toán khi nhận hàng</a></li>
+                        <li><a data-toggle="tab" href="#menu1" onclick="choosetype_2()">Thanh toán online</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <script>
+                            function choosetype_1(){
+                                console.log(document.getElementById("type"));
+                                document.getElementById("type").value = "1";
+                            }
+                            function choosetype_2(){
+                                document.getElementById("type").value = "2";
+                            }
+                        </script>
+                        <div id="home" class="tab-pane fade in active">
+                        <h3></h3>
+                        <p>Whaale sẽ gửi đơn hàng đến địa chỉ quý khách và quý khách sẽ thanh toán ngay cho đơn vị vận chuyển (Bao gồm tiền hàng và phí vận chuyển nếu có)</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                        <h3></h3>
+                        <p>Quý khách thanh toán ngay cho Whaale qua số tài khoản ngân hàng hoặc ví điện tử Momo, chi tiết:</p>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12">
+                                <div class="panel panel-default" style="min-height: 346px;">
+                                    <div class="panel-heading"><img src="../media/tpbank.jpg" class="card-img-top" alt="..."></div>
+                                    <div class="panel-body">
+                                        <span>Thanh toán qua TpBank</span></br>
+                                        <span>Chủ TK: LE THI HAO</span></br>
+                                        <span><b>05473901601</b></span></br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="panel panel-default" style="min-height: 346px;">
+                                    <div class="panel-heading"><img src="../media/momo.jpg" class="card-img-top" alt="..."></div>
+                                    <div class="panel-body">
+                                        <span>Thanh toán qua MOMO QR</span></br>
+                                        <span><a style="color:blue" target="_blank" href="https://momo.vn/huong-dan/huong-dan-thanh-toan-bang-hinh-thuc-ma-thanh-toan">Hướng dẫn thanh toán bằng mã QR qua momo</a></span></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+               </div>
+            </li>
             <li>
                 <div class="col-sm-12 box-dk">
                     <input type="checkbox" checked name="dk" id="dieukhoan" /><a href="<?php echo WEB_PATH.'/dieu-khoan-giao-dich.html'?>">Tôi đồng ý với các điều khoản giao dich của Whaale.store </a><br/>
@@ -71,7 +120,6 @@ $phone_user = $session_user->phone;
                 </div>
                 <button onclick="checkout(1);" class="button btn-checkout"> Đặt Hàng</button>
                 <button type="reset" class="button btn-reset">Nhập lại</button>
-                 
             </li>
         </ul>
         </form>

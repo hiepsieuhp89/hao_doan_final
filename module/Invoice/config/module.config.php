@@ -24,12 +24,26 @@ return array(
                         '__NAMESPACE__' => 'Invoice\Controller',
                         'controller' => 'Invoice\Controller\Index',
                         'action' => 'index',
-                        
                     )
                 )
-            ),
-            
-            
+            ),  
+            'Invoice2' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/system/order[/:action[/:id][/:type][/page-:page]][.html]',
+                    'constraints' => array(                        
+                        'action' => '[a-zA-Z][a-zA-Z0-9-]*',
+                        'id' => '[1-9][0-9]*',
+                        'type' => '[0-9]*',                       
+                        'page' => '[1-9][0-9]*'
+                    ),
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Invoice\Controller',
+                        'controller' => 'Invoice\Controller\Index',
+                        'action' => 'index',
+                    )
+                )
+            ),  
         ),
     ),
     'view_manager' => array(

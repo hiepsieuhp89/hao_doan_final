@@ -74,8 +74,10 @@
                                             <td><?php
                                                 if ($data['type'] == 1) {
                                                     echo 'Thanh toán tại cửa hàng';
-                                                } else {
-                                                    echo 'Thanh toán khi nhận được hàng';
+                                                } else if($data['type'] == 2) {
+                                                    echo 'Thanh toán online';
+                                                } else if($data['type'] == 3) {
+                                                    echo 'Đã thanh toán';
                                                 }
                                                 ?></td>
                                         </tr>

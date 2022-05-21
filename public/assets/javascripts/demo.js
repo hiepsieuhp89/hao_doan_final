@@ -212,6 +212,25 @@ function changestatus_oder(key){
 		}
 	});
 }
+function changetype_oder(key){   
+	var type=$('#type-oder').val();  
+	var values='id_oder='+ key +'&type='+type;
+	
+    $.ajax({
+        url: domain+'/system/order/type',
+        type: "post",
+        data: values,
+        cache: false,
+        success: function (data) {
+            console.log(data);           
+            $('#capnhat').html('<div class="alert alert-success" id="chang_status" role="alert">'+data+'</div>');
+			
+		},
+        error: function () {
+            alert("failure");
+		}
+	});
+}
 function changer_location(key){   
 	var location=$('#location'+key).val();  
 	var values='id='+ key +'&location='+location;

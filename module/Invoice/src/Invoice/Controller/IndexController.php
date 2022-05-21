@@ -114,6 +114,24 @@ class IndexController extends AbstractActionController {
                 //--------------------------
         die;
     }
+    public function typeAction(){        
+        $id=  $this->params()->fromPost('id_oder');
+        $status=  $this->params()->fromPost('type');
+       $data=array(
+         'type'=>$status,
+       );
+       $obj=new Oder();
+       $obj->exchangeArray($data);
+       $this->getOrderTable()->update_type($id, $obj);
+       echo 'Cập nhật thành công';
+	   
+	   //Log File
+				$witelog = new Utility();
+                $text = 'Cập nhật trạng thái hóa đơn ID = '.$id;
+                $witelog->witelog($text);
+                //--------------------------
+        die;
+    }
     public function deleteAction(){
         $this->layout('layout/user.phtml');
         $id_order=  $this->params()->fromRoute('id');
