@@ -602,6 +602,7 @@
 }
 
 .option6 .product-featured{
+	box-shadow: 0px 3px 6px 0px #00000047;
 	margin-top: 0;
 	background: #fff;
 }
@@ -831,31 +832,31 @@
 /** OPTION CATEGORY **/
 
 .option6 .category-featured.fashion .sub-category-list a:hover{
-	color: #ff3366;
+	color: #d40e0d;
 }
 
 .option6 .category-featured.fashion .navbar-brand{
-	background: #ff3366;
+	background: #d40e0d;
 }
 .option6 .category-featured.fashion .navbar-brand a:hover{
 	color: #fff;
 }
 .option6 .category-featured.fashion .nav-menu .navbar-collapse {
 	background: #fff;
-	border-bottom: 2px solid #ff3366;
+	border-bottom: 2px solid #d40e0d;
 }
 .option6 .category-featured.fashion .nav-menu .nav>li:hover a,
 .option6 .category-featured.fashion .nav-menu .nav>li.active a{
-	color: #ff3366;
+	color: #d40e0d;
 }
 
 .option6 .category-featured.fashion .nav-menu .nav>li:hover a:after,
 .option6 .category-featured.fashion .nav-menu .nav>li.active a:after{
-	color: #ff3366;
+	color: #d40e0d;
 }
 
 .option6 .category-featured.fashion .nav-menu .nav>li>a:before{
-	background: #ff3366;
+	background: #d40e0d;
 }
 
 .option6 .category-featured.fashion .product-list li .add-to-cart {
@@ -864,13 +865,13 @@
 	color: rgba(255, 51, 102, 0.7);
 }
 .option6 .category-featured.fashion .product-list li .add-to-cart:hover {
-	background: #ff3366;
+	background: #d40e0d;
 }
 
 .option6 .category-featured.fashion .product-list li .quick-view a.search:hover,
 .option6 .category-featured.fashion .product-list li .quick-view a.compare:hover,
 .option6 .category-featured.fashion .product-list li .quick-view a.heart:hover{
-	background-color: #ff3366;
+	background-color: #d40e0d;
 	opacity: 0.9;
 }
 

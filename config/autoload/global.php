@@ -4,7 +4,7 @@ return array(
     'db' => array(
         'driver' => 'Pdo',
         //infordatabase
-        'dsn' => 'mysql:dbname=techshop;host=localhost',
+        'dsn' => 'mysql:dbname=giadung;host=localhost',
         //endinfordatabase
         'driver_options' => array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''

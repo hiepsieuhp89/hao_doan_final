@@ -3,7 +3,7 @@
 	padding:0px
 }
 .hotline {
-	color:#ff3366;
+	color:#d40e0d;
 }
 .no-padding{
 	padding:0px;
@@ -27,10 +27,10 @@
 }
 
 .bg-fashion{
-	background:#ff3366 !important
+	background:#d40e0d !important
 }
 .bg-border-fashion {
-	border-bottom:2px solid #ff3366
+	border-bottom:2px solid #d40e0d
 }
 .bg-border-sports{
 	border-bottom:2px solid #00a360;
@@ -126,7 +126,7 @@
 	margin-top:10px;
 }
 .date{
-	color:#ff3366;
+	color:#d40e0d;
 }
 .entry-detail{
 	margin-top:0px;
@@ -181,7 +181,7 @@
 	max-height:78px !important;
 }
 .active_thumbnail img{
-	border:1px solid #ff3366;
+	border:1px solid #d40e0d;
 }
 #form-by .form-group div{
 	margin-bottom:10px;
@@ -199,7 +199,7 @@
 .price_by{
 	font-size:18px;
 	font-weight:bold;
-	color:#FF3366;
+	color:#d40e0d;
 }
 #process{
 	text-align:center !important;
@@ -223,7 +223,7 @@
 	cursor:pointer;
 }
 .option2 .product-list li .product-price {font-weight: 700;
-	color:#ff3366;
+	color:#d40e0d;
 }
 .vertical-dropdown-menu{
 	top:0px
@@ -263,7 +263,7 @@
 }
 .cart_summary .product-price{
 	font-size:16px;
-	color:#ff3366;
+	color:#d40e0d;
 }
 .cart_summary .old-price, .old-price-detail{
 	color:#555;
@@ -393,7 +393,7 @@
 	font-weight:bold;
 }
 .mb-remove-cart a{
-	color:#ff3366;
+	color:#d40e0d;
 	line-height:30px;
 	font-size:20px;
 }
@@ -420,7 +420,7 @@
 	line-height:20px;
 	font-size:16px;
 	font-weight:bold;
-	color:#ff3366;
+	color:#d40e0d;
 }
 .total-money{
 	font-size:16px;
@@ -445,7 +445,7 @@
 }
 /* Màu background category----------------------------*/ 
 .background-nav1, .background-cart1:hover{
-	background:#ff3366 !important;
+	background:#d40e0d !important;
 }
 .background-nav2, .background-cart2:hover{
 	background:#00a360 !important;
@@ -476,7 +476,7 @@
 }
 /* end màu background------------------*/
 .border-nv1{
-	border-bottom: 2px solid #ff3366 !important;
+	border-bottom: 2px solid #d40e0d !important;
 }
 .border-nv2{
 	border-bottom: 2px solid #00a360 !important;

@@ -509,7 +509,7 @@
 	#main-menu .navbar-header {
 	  display: block;
 	  margin: 0;
-	  background: #ff3366;
+	  background: #d40e0d;
 	  color: #fff;
 	  margin-left: 15px;
 	}
@@ -964,7 +964,7 @@
 	#main-menu .navbar-header {
 	  display: block;
 	  margin: 0;
-	  background: #ff3366;
+	  background: #d40e0d;
 	  color: #fff;
 	  margin-left: 15px;
 	}
@@ -1076,7 +1076,7 @@
 		margin-top: 10px;
 	}
 	.page-order ul.step li.current-step{
-		border-left: 3px solid #ff3366;
+		border-left: 3px solid #d40e0d;
 		border-bottom: none;
 	}
 	#footer2 .footer-top .footer-menu li{

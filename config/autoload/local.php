@@ -4,7 +4,7 @@ return array(
     'db' => array(
         //inforuse
 'username' => 'root',
-'password' => 'anhsenpzohp',
+'password' => '',
     //endinforuse
     ),
 );
