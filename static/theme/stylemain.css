@@ -3,7 +3,7 @@
 	padding:0px
 }
 .hotline {
-	color:#ff3366;
+	color:#f49217;
 }
 .no-padding{
 	padding:0px;
@@ -59,10 +59,10 @@
 }
 
 .bg-fashion{
-	background:#ff3366 !important
+	background:#f49217 !important
 }
 .bg-border-fashion {
-	border-bottom:2px solid #ff3366
+	border-bottom:2px solid #f49217
 }
 .bg-border-sports{
 	border-bottom:2px solid #00a360;
@@ -171,7 +171,7 @@
 	margin-top:10px;
 }
 .date{
-	color:#ff3366;
+	color:#f49217;
 }
 .entry-detail{
 	margin-top:0px;
@@ -226,7 +226,7 @@
 	max-height:78px !important;
 }
 .active_thumbnail img{
-	border:1px solid #ff3366;
+	border:1px solid #f49217;
 }
 #form-by .form-group div{
 	margin-bottom:10px;
@@ -244,7 +244,7 @@
 .price_by{
 	font-size:18px;
 	font-weight:bold;
-	color:#FF3366;
+	color:#f49217;
 }
 #process{
 	text-align:center !important;
@@ -258,7 +258,7 @@
 	line-height:30px;
 }
 .sucess_by{
-	color:#ff3366;
+	color:#f49217;
 	margin-bottom:15px;
 	font-style:italic;
 	font-size:18px;
@@ -269,7 +269,7 @@
 }
 .option2 .product-list li .product-price {font-weight: 700;
 	font-weight: 700;
-	color:#ff3366;
+	color:#f49217;
 }
 .vertical-dropdown-menu{
 	top:0px
@@ -312,7 +312,7 @@
 }
 .cart_summary .product-price{
 	font-size:16px;
-	color:#ff3366;
+	color:#f49217;
 }
 .cart_summary .old-price, .old-price-detail{
 	color:#555;
@@ -440,7 +440,7 @@
 	font-weight:bold;
 }
 .mb-remove-cart a{
-	color:#ff3366;
+	color:#f49217;
 	line-height:30px;
 	font-size:20px;
 }
@@ -467,7 +467,7 @@
 	line-height:20px;
 	font-size:16px;
 	font-weight:bold;
-	color:#ff3366;
+	color:#f49217;
 }
 .total-money{
 	font-size:16px;
@@ -492,7 +492,7 @@
 }
 /* Màu background category----------------------------*/ 
 .background-nav1, .background-cart1:hover{
-	background:#ff3366 !important;
+	background:#f49217 !important;
 }
 .background-nav2, .background-cart2:hover{
 	background:#00a360 !important;
@@ -523,7 +523,7 @@
 }
 /* end màu background------------------*/
 .border-nv1{
-	border-bottom: 2px solid #ff3366 !important;
+	border-bottom: 2px solid #f49217 !important;
 }
 .border-nv2{
 	border-bottom: 2px solid #00a360 !important;
