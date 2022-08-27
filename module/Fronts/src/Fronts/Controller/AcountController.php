@@ -151,9 +151,9 @@ class AcountController extends AbstractActionController {
 
 
                 /// Gửi Mail khi đăng ký thành công
-                $title_mail = 'Giadung88.com | Thông báo Quý Khách hàng  đã đăng ký thành công tài khoản mua hàng mới';
+                $title_mail = 'ChiTrungTech.com | Thông báo Quý Khách hàng  đã đăng ký thành công tài khoản mua hàng mới';
                 $content_mail = '<p style="font-weight:bold">Xin chào bạn, ' . $name . '</p>
-                               <p>Thông tin tài khoản của bạn tại <span style="font-weight:bold">Giadung88.com</span></p>
+                               <p>Thông tin tài khoản của bạn tại <span style="font-weight:bold">ChiTrungTech.com</span></p>
                                <p style="font-weight:bold">Email đăng nhập: ' . $email . '</p>
                                <p style="font-weight:bold">Mật khẩu: ' . $password . '</p>
                                <p>Hãy truy cập Website <a href="' . WEB_PATH . '">' . WEB_PATH . '</a> để đăng nhập</p>';
@@ -281,10 +281,10 @@ class AcountController extends AbstractActionController {
                 $obj->exchangeArray($data);
                 $this->getAcountTable()->updatepass($email, $obj);
 
-                $title_mail = 'Giadung88.com | Khôi phục mật khẩu';
-                $content_mail = '<p>Bạn vừa sử dụng tính năng khôi phục mật khẩu Website <a href="' . WEB_PATH . '"><span style="font-weight:bold">Giadung88.com</span></a></p>
+                $title_mail = 'ChiTrungTech.com | Khôi phục mật khẩu';
+                $content_mail = '<p>Bạn vừa sử dụng tính năng khôi phục mật khẩu Website <a href="' . WEB_PATH . '"><span style="font-weight:bold">ChiTrungTech.com</span></a></p>
                     <p style="font-weight:bold"> Mật khẩu mới của bạn là: ' . $pass . '</p>
-                    <p>Để bảo mật tài khoản của bạn hãy đăng nhập Website <a href="' . WEB_PATH . '"><span style="font-weight:bold">Giadung88.com</span></a> để đổi mật khẩu của bạn</p>';
+                    <p>Để bảo mật tài khoản của bạn hãy đăng nhập Website <a href="' . WEB_PATH . '"><span style="font-weight:bold">ChiTrungTech.com</span></a> để đổi mật khẩu của bạn</p>';
                 $this->sendmail($email, $email_admin, $title_mail, $content_mail);
 
                 $error1 = 'Một mật khẩu mới đã được chúng tôi gửi đến Email của bạn. Xin vui lòng kiểm tra Email của bạn !';

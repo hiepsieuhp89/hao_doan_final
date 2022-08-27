@@ -486,11 +486,11 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
         $odersucess->getoder=$content_mail;
 //Gửi thông tin hóa đơn đến Email khách hàng nếu khách hàng điền mail
         if ($email != null) {
-            $this->sendmail($email, $email_admin, 'Hóa đơn đặt hàng tại Giadung88.com. Mã hóa đơn: ' . $code_oder, $content_mail);
+            $this->sendmail($email, $email_admin, 'Hóa đơn đặt hàng tại ChiTrungTech.com. Mã hóa đơn: ' . $code_oder, $content_mail);
         }
 // gửi yêu cấu đặt hàng đến quản trị
         $content_mail1 = " 
-            <p>Giadung88.com có 1 yều cầu đặt hàng mới từ $name</p>
+            <p>ChiTrungTech.com có 1 yều cầu đặt hàng mới từ $name</p>
             <table border='0' style='width:100%;color:#000;'>
         <tr style='background-color:#b9babe;text-align:center;line-height: 22px;'>
             <th>Tên sản phẩm</th>            
@@ -509,7 +509,7 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
             <p>$address</p>
             <p>Điện thoại: $phone </p>
                 ";
-        $this->sendmail($email_customer, $mail_system, 'Yều cầu đặt hàng tại Giadung88.com. Mã hóa đơn: ' . $code_oder, $content_mail1);
+        $this->sendmail($email_customer, $mail_system, 'Yều cầu đặt hàng tại ChiTrungTech.com. Mã hóa đơn: ' . $code_oder, $content_mail1);
 
 // //xóa giỏ hàng khi thanh toán xong
         unset($arraycart);
@@ -765,11 +765,11 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
 
 //Gửi thông tin hóa đơn đến Email khách hàng nếu khách hàng nhập mail
         if ($email != null) {
-            $this->sendmail($email, $email_admin, 'Hóa đơn đặt hàng tại Giadung88.com. Mã hóa đơn: ' . $code_oder, $content_mail);
+            $this->sendmail($email, $email_admin, 'Hóa đơn đặt hàng tại ChiTrungTech.com. Mã hóa đơn: ' . $code_oder, $content_mail);
         }
 // gửi yêu cấu đặt hàng đến quản trị
         $content_mail1 = " 
-            <p>Giadung88.com có 1 yều cầu đặt hàng mới từ $name</p>
+            <p>ChiTrungTech.com có 1 yều cầu đặt hàng mới từ $name</p>
             <table border='0' style='width:100%;color:#000;'>
         <tr style='background-color:#b9babe;text-align:center;line-height: 22px;'>
             <th>Tên sản phẩm</th>            
@@ -793,7 +793,7 @@ echo '<span class="price product-price">' . number_format($price_sales , 0, ',',
             <p>$address</p>
             <p>Điện thoại: $phone </p>
                 ";
-        $this->sendmail($email_customer, $mail_system, 'Yều cầu đặt hàng tại Giadung88.com. Mã hóa đơn: ' . $code_oder, $content_mail1);
+        $this->sendmail($email_customer, $mail_system, 'Yều cầu đặt hàng tại ChiTrungTech.com. Mã hóa đơn: ' . $code_oder, $content_mail1);
 
         echo '1';
         die;

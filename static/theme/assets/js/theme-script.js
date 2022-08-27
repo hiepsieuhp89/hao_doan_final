@@ -703,7 +703,7 @@ function checkout_old(key){
 	}*/
 	else if (!$("#dieukhoan").is(':checked')) {
 		$('#dieukhoan').focus();
-		$('#dieukhoan-error1').html('Để đặt hàng thành công bạn phải đồng ý với các điều khoản của giadung88.com');
+		$('#dieukhoan-error1').html('Để đặt hàng thành công bạn phải đồng ý với các điều khoản của ChiTrungTech.com');
 		return false;
 		}else{
 		if(key==0){
@@ -788,7 +788,7 @@ function checkout(key){
 	}*/
 	else if (!$("#dieukhoan").is(':checked')) {
 		$('#dieukhoan').focus();
-		$('#dieukhoan-error1').html('Để đặt hàng thành công bạn phải đồng ý với các điều khoản của giadung88.com');
+		$('#dieukhoan-error1').html('Để đặt hàng thành công bạn phải đồng ý với các điều khoản của ChiTrungTech.com');
 		return false;
 		}else{		
 			$('.load').html('<img src="'+domain+'/media/images/load-checkout.gif" width="250;"/>');

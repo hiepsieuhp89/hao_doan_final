@@ -10,17 +10,17 @@ CKEDITOR.editorConfig = function( config ) {
 	var domainer=location.hostname;
         config.protectedSource = [/\r|\n/g];
 	config.removeDialogTabs = 'image:advanced;link:advanced';
-	config.filebrowserBrowseUrl = 'http://giadung88.com/public/ckfinder/ckfinder.html';
+	config.filebrowserBrowseUrl = 'http://ChiTrungTech.com/public/ckfinder/ckfinder.html';
 
-config.filebrowserImageBrowseUrl = 'http://giadung88.com/public/ckfinder/ckfinder.html?type=Images';
+config.filebrowserImageBrowseUrl = 'http://ChiTrungTech.com/public/ckfinder/ckfinder.html?type=Images';
 
-config.filebrowserFlashBrowseUrl = 'http://giadung88.com/demo/public/ckfinder/ckfinder.html?type=Flash';
+config.filebrowserFlashBrowseUrl = 'http://ChiTrungTech.com/demo/public/ckfinder/ckfinder.html?type=Flash';
 
-config.filebrowserUploadUrl ='http://giadung88.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+config.filebrowserUploadUrl ='http://ChiTrungTech.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
 
-config.filebrowserImageUploadUrl = 'http://giadung88.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
+config.filebrowserImageUploadUrl = 'http://ChiTrungTech.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
 
-config.filebrowserFlashUploadUrl = 'http://giadung88.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
+config.filebrowserFlashUploadUrl = 'http://ChiTrungTech.com/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 config.entities = false;
 config.htmlEncodeOutput = false;
 };
